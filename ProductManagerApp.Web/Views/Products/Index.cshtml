@@ -1,0 +1,53 @@
+﻿@model ProductManagerApp.Web.Models.ProductsViewModel
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Ürün İsmi
+        </th>
+        <th>
+            Barkod
+        </th>
+        <th>
+            Fyat
+        </th>
+        <th>
+            Açıklama
+        </th>
+        <th>
+            Image
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Products) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProductName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Barcode)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Detail)
+    </td>
+    <td>
+        @foreach (var itemImage in Model.ProductsImages.Where(x=>x.ProductId == item.Id))
+        {
+        <img src="data:image/jpeg;base64,@System.Convert.ToBase64String(itemImage.ImageByte)" style="width: 20%; height: auto;" />
+        }
+        
+    </td>
+</tr>
+}
+
+</table>

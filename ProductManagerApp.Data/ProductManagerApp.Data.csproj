@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5A70A40-C628-402D-8CB8-EC107F8F72A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductManagerApp.Data</RootNamespace>
+    <AssemblyName>ProductManagerApp.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Migrations\202012222048435_init-db.cs" />
+    <Compile Include="Migrations\202012222048435_init-db.Designer.cs">
+      <DependentUpon>202012222048435_init-db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012222050203_change_images_tablo_colums.cs" />
+    <Compile Include="Migrations\202012222050203_change_images_tablo_colums.Designer.cs">
+      <DependentUpon>202012222050203_change_images_tablo_colums.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012222055138_init_users_table.cs" />
+    <Compile Include="Migrations\202012222055138_init_users_table.Designer.cs">
+      <DependentUpon>202012222055138_init_users_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012222142511_update_tables.cs" />
+    <Compile Include="Migrations\202012222142511_update_tables.Designer.cs">
+      <DependentUpon>202012222142511_update_tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012222150543_update_tables_new.cs" />
+    <Compile Include="Migrations\202012222150543_update_tables_new.Designer.cs">
+      <DependentUpon>202012222150543_update_tables_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012232259482_update-diagrams.cs" />
+    <Compile Include="Migrations\202012232259482_update-diagrams.Designer.cs">
+      <DependentUpon>202012232259482_update-diagrams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012232321009_update-diagrams_2.cs" />
+    <Compile Include="Migrations\202012232321009_update-diagrams_2.Designer.cs">
+      <DependentUpon>202012232321009_update-diagrams_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012232324545_update-diagrams_3.cs" />
+    <Compile Include="Migrations\202012232324545_update-diagrams_3.Designer.cs">
+      <DependentUpon>202012232324545_update-diagrams_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240125275_update-diagrams_4.cs" />
+    <Compile Include="Migrations\202012240125275_update-diagrams_4.Designer.cs">
+      <DependentUpon>202012240125275_update-diagrams_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240314402_update-user-table.cs" />
+    <Compile Include="Migrations\202012240314402_update-user-table.Designer.cs">
+      <DependentUpon>202012240314402_update-user-table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240320288_update-user-table-2.cs" />
+    <Compile Include="Migrations\202012240320288_update-user-table-2.Designer.cs">
+      <DependentUpon>202012240320288_update-user-table-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240321244_update-user-table-3.cs" />
+    <Compile Include="Migrations\202012240321244_update-user-table-3.Designer.cs">
+      <DependentUpon>202012240321244_update-user-table-3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240325069_update-user-table-7.cs" />
+    <Compile Include="Migrations\202012240325069_update-user-table-7.Designer.cs">
+      <DependentUpon>202012240325069_update-user-table-7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240325283_update-user-table-8.cs" />
+    <Compile Include="Migrations\202012240325283_update-user-table-8.Designer.cs">
+      <DependentUpon>202012240325283_update-user-table-8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240404084_update-user-table-10.cs" />
+    <Compile Include="Migrations\202012240404084_update-user-table-10.Designer.cs">
+      <DependentUpon>202012240404084_update-user-table-10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012240529186_update-user-table-11.cs" />
+    <Compile Include="Migrations\202012240529186_update-user-table-11.Designer.cs">
+      <DependentUpon>202012240529186_update-user-table-11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductManagerApp.Entity\ProductManagerApp.Entity.csproj">
+      <Project>{8D927B31-C329-4C3E-B261-DC65D8F007F1}</Project>
+      <Name>ProductManagerApp.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202012222048435_init-db.resx">
+      <DependentUpon>202012222048435_init-db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012222050203_change_images_tablo_colums.resx">
+      <DependentUpon>202012222050203_change_images_tablo_colums.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012222055138_init_users_table.resx">
+      <DependentUpon>202012222055138_init_users_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012222142511_update_tables.resx">
+      <DependentUpon>202012222142511_update_tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012222150543_update_tables_new.resx">
+      <DependentUpon>202012222150543_update_tables_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012232259482_update-diagrams.resx">
+      <DependentUpon>202012232259482_update-diagrams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012232321009_update-diagrams_2.resx">
+      <DependentUpon>202012232321009_update-diagrams_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012232324545_update-diagrams_3.resx">
+      <DependentUpon>202012232324545_update-diagrams_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240125275_update-diagrams_4.resx">
+      <DependentUpon>202012240125275_update-diagrams_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240314402_update-user-table.resx">
+      <DependentUpon>202012240314402_update-user-table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240320288_update-user-table-2.resx">
+      <DependentUpon>202012240320288_update-user-table-2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240321244_update-user-table-3.resx">
+      <DependentUpon>202012240321244_update-user-table-3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240325069_update-user-table-7.resx">
+      <DependentUpon>202012240325069_update-user-table-7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240325283_update-user-table-8.resx">
+      <DependentUpon>202012240325283_update-user-table-8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240404084_update-user-table-10.resx">
+      <DependentUpon>202012240404084_update-user-table-10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012240529186_update-user-table-11.resx">
+      <DependentUpon>202012240529186_update-user-table-11.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

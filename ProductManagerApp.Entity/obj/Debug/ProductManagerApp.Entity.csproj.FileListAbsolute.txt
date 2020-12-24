@@ -1,0 +1,15 @@
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\ProductManagerApp.Entity.dll
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\ProductManagerApp.Entity.pdb
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\EntityFramework.dll
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\EntityFramework.xml
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\obj\Debug\ProductManagerApp.Entity.csproj.CoreCompileInputs.cache
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\obj\Debug\ProductManagerApp.Entity.csproj.CopyComplete
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\obj\Debug\ProductManagerApp.Entity.dll
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\obj\Debug\ProductManagerApp.Entity.pdb
+C:\LocalProjects\ProductManagerApp\ProductManagerApp.Entity\obj\Debug\ProductManagerApp.Entity.csprojAssemblyReference.cache
